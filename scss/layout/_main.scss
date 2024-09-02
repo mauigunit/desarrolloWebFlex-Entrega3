@@ -1,0 +1,114 @@
+@media (min-width: 320px) and (max-width: 479px) {
+    .Contenedor-Grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+    .Contenedor-Grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    .Contenedor-Grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 10rem);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .Contenedor-Grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 10rem);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .Contenedor-Grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 10rem);
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1599px) {
+    .Contenedor-Grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 10rem);
+    }
+}
+
+@media (min-width: 1600px) {
+    .Contenedor-Grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 10rem);
+    }
+}
+
+.fondo-main {
+    background-color: rgb(204, 204, 204);
+}
+
+.subtitulo-servicios {
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+}
+
+@for $i from 1 through 5 {
+    .documento#{$i} {
+        border: 1px solid #ccc;
+        width: 13rem;
+        border-radius: 5px;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        padding: .3rem;
+        & img {
+            width: 5rem;
+            background-size: cover;
+        }
+        & h4 {
+            font-size: .9rem;
+            color: rgb(0, 0, 0);
+        };
+        & button:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.Contenedor-Grid {
+    display: grid;
+    gap: .5rem;
+    padding: .2rem;
+}
+
+@keyframes efecto-imagen {
+    0% {
+        transform: scale(.8, .8);
+    }
+
+    25% {
+        transform: scale(.9, .9);
+    }
+
+    50% {
+        transform: scale(1, 1);
+    }
+
+    75% {
+        transform: scale(.9, .9);
+    }
+
+    100% {
+        transform: scale(.8, .8);
+    }
+}
+
+.imagenDoc {
+    width: 15rem;
+    height: auto;
+    animation-name: efecto-imagen;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}

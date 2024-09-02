@@ -1,0 +1,121 @@
+.fondo {
+    background-image: url("../images/logo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 95vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.fondo-servicios{
+    height: 70vh;
+}
+
+.fondo-oscuro {
+    position: absolute;
+    width: 100%;
+    height: 95vh;
+    background-color: rgba(0, 0, 0, 0.6666666667);
+}
+
+.fondo-oscuro-servicios {
+    height: 70vh;
+}
+
+.subtitulo {
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition: transform 1s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.seccionSlideIndex {
+    width: 30%;
+}
+
+.Contenedor-Slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.colorTextoSlide {
+    color: rgb(255, 0, 0);
+}
+
+.imagenSlide {
+    width: 100%;
+}
+
+.btnContratar {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btnContratar img {
+    height: 5rem;
+}
+
+.botonesHeader {
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* CONTACTO */
+.tituloContacto {
+    @extend %tituloContacto;
+}
+
+/* SERVICIOS */
+.parrafoServicio {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    margin-top: 2rem;
+}
+
+/* NOSOTROS */
+.contendido {
+    height: 75vh;
+    overflow-y: scroll;
+    color: #fff;
+    text-align: justify;
+}
+
+/* LOGIN */
+.contenedor-login {
+    padding-top: 5rem;
+    color: rgb(255, 255, 255);
+    & a {
+        margin-top: 2rem;
+    }
+}
+
+/* GENERAL */
+.footer {
+    text-align: center;
+    font-size: .8rem;
+}
+
+.flexHeader {
+    @extend %flexHeader;
+}
+
+.efectoCaja {
+    transition: all 1s;
+    &:focus {
+        height: 4rem;
+        font-size: 2rem;
+    }
+}

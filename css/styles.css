@@ -1,0 +1,306 @@
+.fondo {
+  background-image: url("../images/logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 95vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fondo-servicios {
+  height: 70vh;
+}
+
+.fondo-oscuro {
+  position: absolute;
+  width: 100%;
+  height: 95vh;
+  background-color: rgba(0, 0, 0, 0.6666666667);
+}
+
+.fondo-oscuro-servicios {
+  height: 70vh;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transition: transform 1s;
+}
+.subtitulo:hover {
+  transform: scale(1.2);
+}
+
+.seccionSlideIndex {
+  width: 30%;
+}
+
+.Contenedor-Slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.colorTextoSlide {
+  color: rgb(255, 0, 0);
+}
+
+.imagenSlide {
+  width: 100%;
+}
+
+.btnContratar {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btnContratar img {
+  height: 5rem;
+}
+
+.botonesHeader {
+  transition: transform 0.3s;
+}
+.botonesHeader:hover {
+  transform: scale(1.1);
+}
+
+/* CONTACTO */
+/* SERVICIOS */
+.parrafoServicio {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  text-align: justify;
+  margin-top: 2rem;
+}
+
+/* NOSOTROS */
+.contendido {
+  height: 75vh;
+  overflow-y: scroll;
+  color: #fff;
+  text-align: justify;
+}
+
+/* LOGIN */
+.contenedor-login {
+  padding-top: 5rem;
+  color: rgb(255, 255, 255);
+}
+.contenedor-login a {
+  margin-top: 2rem;
+}
+
+/* GENERAL */
+.footer {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.efectoCaja {
+  transition: all 1s;
+}
+.efectoCaja:focus {
+  height: 4rem;
+  font-size: 2rem;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .Contenedor-Grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 480px) and (max-width: 639px) {
+  .Contenedor-Grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  .Contenedor-Grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 10rem);
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .Contenedor-Grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 10rem);
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .Contenedor-Grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 10rem);
+  }
+}
+@media (min-width: 1280px) and (max-width: 1599px) {
+  .Contenedor-Grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 10rem);
+  }
+}
+@media (min-width: 1600px) {
+  .Contenedor-Grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 10rem);
+  }
+}
+.fondo-main {
+  background-color: rgb(204, 204, 204);
+}
+
+.subtitulo-servicios {
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+}
+
+.documento1 {
+  border: 1px solid #ccc;
+  width: 13rem;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 0.3rem;
+}
+.documento1 img {
+  width: 5rem;
+  background-size: cover;
+}
+.documento1 h4 {
+  font-size: 0.9rem;
+  color: rgb(0, 0, 0);
+}
+.documento1 button:hover {
+  transform: scale(1.2);
+}
+
+.documento2 {
+  border: 1px solid #ccc;
+  width: 13rem;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 0.3rem;
+}
+.documento2 img {
+  width: 5rem;
+  background-size: cover;
+}
+.documento2 h4 {
+  font-size: 0.9rem;
+  color: rgb(0, 0, 0);
+}
+.documento2 button:hover {
+  transform: scale(1.2);
+}
+
+.documento3 {
+  border: 1px solid #ccc;
+  width: 13rem;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 0.3rem;
+}
+.documento3 img {
+  width: 5rem;
+  background-size: cover;
+}
+.documento3 h4 {
+  font-size: 0.9rem;
+  color: rgb(0, 0, 0);
+}
+.documento3 button:hover {
+  transform: scale(1.2);
+}
+
+.documento4 {
+  border: 1px solid #ccc;
+  width: 13rem;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 0.3rem;
+}
+.documento4 img {
+  width: 5rem;
+  background-size: cover;
+}
+.documento4 h4 {
+  font-size: 0.9rem;
+  color: rgb(0, 0, 0);
+}
+.documento4 button:hover {
+  transform: scale(1.2);
+}
+
+.documento5 {
+  border: 1px solid #ccc;
+  width: 13rem;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 0.3rem;
+}
+.documento5 img {
+  width: 5rem;
+  background-size: cover;
+}
+.documento5 h4 {
+  font-size: 0.9rem;
+  color: rgb(0, 0, 0);
+}
+.documento5 button:hover {
+  transform: scale(1.2);
+}
+
+.Contenedor-Grid {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.2rem;
+}
+
+@keyframes efecto-imagen {
+  0% {
+    transform: scale(0.8, 0.8);
+  }
+  25% {
+    transform: scale(0.9, 0.9);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  75% {
+    transform: scale(0.9, 0.9);
+  }
+  100% {
+    transform: scale(0.8, 0.8);
+  }
+}
+.imagenDoc {
+  width: 15rem;
+  height: auto;
+  animation-name: efecto-imagen;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+.flexHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tituloContacto {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=styles.css.map */
